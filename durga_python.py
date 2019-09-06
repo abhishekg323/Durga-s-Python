@@ -542,4 +542,85 @@ print(finishers[:2])
 copy_of_finishers = finishers[:]
 print(copy_of_finishers)
 
-#adding items to list
+#tuples:
+tuple1 = (10,20,30,40)
+print(tuple1)
+'''
+we can not do 
+[0]= 7777
+tuple1.append(20)
+tuple1.remove(40)
+'''
+
+t = ()
+print(type(t))
+t = (10)
+print(type(t))
+t = (10,)
+print(type(t))
+
+#difference between tuple and list
+#list is mutatble, can defined in  [], more memory and performance is less
+#tuple is immutable, can defined in (), less memory and performance is high
+
+
+#set data types
+#duplicates are not allowed and order is not required, inexing and slicing is not allowed and heterogenous
+# boject are allowed, and we can add and remove object so its mutable and growable
+s = {10,20,30,40}
+print(type(s))
+s={10,20,10,'durga',30,40}
+print(s)
+
+#print(s[0])
+#print(s[0:4])
+
+s={10,20,30,40,50}
+s.add(60)
+print(s)
+s.remove(50)
+print(s)
+
+#in append method elements always add at last but in add method there is not garuntee to where elements is add
+s ={}
+print(type(s))
+s = set()
+print(s)
+
+#frozen set
+s = {10,20,30,40,50}
+fs = frozenset(s)
+print(type(fs))
+#forzen set is now immutable object and we can not change it
+
+#fs.add(20)
+#fs.remove(30)
+frozenset1 = frozenset({10,20,30,40,50})
+print(frozenset1)
+print(type(frozenset1))
+
+#dictionary
+#duplicates are not allowed in key but we can take as value as duplicates but if you use
+#order is not applicable,mutable,slicing not applicable
+d={100:'Shiva',200:'hiren',300:'renuka'}
+print(type(d))
+
+d={}
+d[100] = 'Jaya'
+d[200] = 'Shiva'
+d[300] = 'Hiren'
+d[400] = 'Renuka'
+print(d)
+d[100] = 'Purva'
+print(d)
+
+#range data types
+r = range(10)
+print(r)
+print(type(r))
+for x in r:
+    print(x)
+
+r1 = range(1,10)
+for x in r1:
+    print(x)
