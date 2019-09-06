@@ -614,7 +614,8 @@ print(d)
 d[100] = 'Purva'
 print(d)
 
-#range data types
+#range data types, slicing is applicable , its immutable we can not change element, order is applicable
+# its provide indexing ,
 '''r=range(10)
 print(r)
 print(type(r))
@@ -642,3 +643,55 @@ r=range(20,1,-5)
 for x in r:
     print(x)
 
+r = range(10,21)
+for x in r:
+    print(x)
+print(r[0])
+print(r[-1])
+print(r[1:5])
+
+r1 = range(10,20)
+for x in r1:
+    print(r1[1:5])
+
+#r[1] = 1000 we can not change element because its immutable
+
+#bytes data type:
+#values only from 0 to 255,immutable,
+l=[10,20,30,40,50,256]
+b=bytes(l)
+print(type(b))
+for x in b:
+    print(x)
+print(b[7])
+
+#b[0] = 77 we will get type error becasue we can not get it
+
+#bytearray:
+# bityearray is mutable ,
+l=[10,20,30,40]
+b = bytearray(l)
+print(type(b))
+print(b[0])
+print(b[-1])
+#if you add 256 you will get error like range should be in
+b[0]=77
+for x in b:
+    print(x)
+
+'''
+int = to represesnt whole number(a=10), immutable,no Insertion order preserved,no indexing ans slicing, no duplicates
+float = to represent floating value(a = 10.3), immutable,no Insertion order preserved,no indexing ans slicing, no duplicates
+complex = to represent complex number(a = 1-+20j),immutable,no Insertion order preserved,no indexing ans slicing, no duplicates
+boolean = to represent logical value only  a=true, b =False, immutable,no Insertion order preserved,no indexing ans slicing, no duplicates
+string = to represent a sequence of character, immutable,no Insertion order preserved,indexing and slicing, no duplicates
+list = an ordered collection of object, mutable,insertion order preserved, indexing and slicing and duplicates are allowed
+tuple =read only version of list, immutable,insertion order preserved, indexing and slicing and duplicates are allowed
+set = an unordered collection of unique objects, mutable,no insertion ordered preserved,no indexing,slicing and duplicates
+frozenset = read only version of set, immutable, no insertion ordered preserved, no indexing, slicing and duplicates 
+dict = to represenetd key value pair,mutable, no insertion ordered preserved,no indexing and slicing but key no duplicates but vlaue
+byte= to group of byte value,immutable,insertion ordered preserved,indexing, slcing and duplicates are allowed
+bytearray = a group of bytevalue, mutable,insertion ordered preserved ,indexing, slicing and duplicates are allowed
+range = sequence of value , immutable, insertion ordered preserved,indexing and slicing apllicable but no duplictes
+
+'''
