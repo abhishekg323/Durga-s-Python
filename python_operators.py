@@ -229,5 +229,73 @@ print(False<<2)
 print(True>>2)
 print(False>>2)
 
+#Assignment operator:
+#in python increment and decrement operator are not applicable
+x= 10
+print(++x)
+print(+++x)
+print(-x)
+print(--x)
+
+x= 30
+x+= 5
+print(x)
+x-=5
+print(x)
+x*=5
+print(x)
+x/=5
+print(x)
+x%=5
+print(x)
+x//=5
+print(x)
+x**=5
+print(x)
+x&=5
+print(x)
+x|=5
+print(x)
+x^=5
+print(x)
+x>>=5
+print(x)
+x<<=5
+print(x)
+
+#ternary operator:
+#here is three agrument in one condition so
+a=10
+b=20
+c=30 if a>b else 40
+print(c)
+
+'''
+#read two int value from keyboard and print min value
+a= int(input('enter first value here:'))
+b = int(input('enter secong value here:'))
+min = a if a<b else b
+print('minimum value is:', min)
+'''
+
+'''#Nesting of ternary operator:
+a=int(input('enter first number:'))
+b=int(input('enter second number:'))
+c=int(input('enter third number'))
+min = a if a<b and a<c else b if b<c else c
+#min = a if a<b<c else b if b<c else c try this one is but it will not give min values just try it and run it
+print('minimum value is:',min)
+
+max =a if a>b and a>c else b if b>c else c
+print('maximum value:', max)
+'''
+
+a = int(input('please enter first value:'))
+b= int(input('please enter second value:'))
+
+result = "both numbers are equal" if a==b else "a is smaller than b" if a<b else "a is Bigger than b"
+print('here is result of:', result)
 
 
+#special operators:
+#
