@@ -695,3 +695,60 @@ bytearray = a group of bytevalue, mutable,insertion ordered preserved ,indexing,
 range = sequence of value , immutable, insertion ordered preserved,indexing and slicing apllicable but no duplictes
 
 '''
+
+#none data type:
+def f1():
+    return 10
+
+x = f1()
+print(x)
+
+def f1():
+    print('hello')
+
+x = f1()
+print(x)
+
+a=None
+print(a)
+print(id(a))
+print(type(a))
+
+a= None
+b= None
+c= None
+def f1():
+    pass
+d= f1()
+print(id(a))
+print(id(b))
+print(id(c))
+
+print(a,b,c,d)
+
+
+#Escape character:
+'''
+\n =new line
+\t = horizontal tab
+\ = back slash
+\r = carriage return
+\b = back space
+\f = form feed
+\' = single quote
+\'' = double quote
+\\ = double slash
+'''
+print('RenukaPatoliya')
+print('Renuka\tPatoliya')
+print('Shiva\nPatoliya')
+print('This shiva\'s House') #back slash
+
+
+#comments:
+# symbol used for single line comments
+''' this symbol used for multiline comments'''
+
+#constants in python:
+'''constant is not applicable in python like in java there is final keyword to used for constant'''
+
