@@ -615,12 +615,30 @@ d[100] = 'Purva'
 print(d)
 
 #range data types
-r = range(10)
+'''r=range(10)
 print(r)
 print(type(r))
 for x in r:
     print(x)
+    '''
 
-r1 = range(1,10)
+'''r1=range(1,10)
 for x in r1:
     print(x)
+'''
+r=range(1,21,1)
+for x in r:
+    print(r)
+
+r=range(1,21,2)
+for x in r:
+    print(r)
+
+r=range(1,21,3)
+for x in r:
+    print(r)
+
+r=range(20,1,-5)
+for x in r:
+    print(x)
+
