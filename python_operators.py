@@ -127,8 +127,107 @@ l3 = l1
 print(l1 is l3)
 print(l1==l3)
 
-#logical operators for boolean type:
+#logical operators for boolean type:and, or, not(complement)
 
+print(True and True)
+print(True and False)
+print(False and True)
+print(False and False)
+
+print(True or False)
+print(True or True)
+print(False or False)
+print(False or True)
+
+print(not True)
+print(not False)
+
+'''username = input('enter username:')
+password = input('enter password:')
+if username== 'Shiva' and password== 'Patoliya':
+    print('this is valid user')
+else:
+    print('this is invalid user')
+'''
+#logical operators for non-boolean type:
+'''
+x and y
+if x evaluates to False, then result is x
+if x evaluates to True, then result is y
+if x is 0 then its mean x is false and result will be 0
+if x is none zero thats means x is True and result is y
+'''
+print(10 and 20 )
+print( 0 and 20 )
+
+print('Shiva' and 'Patoliya') # here Shiva is non-empty string so its True so result is Patoliya
+print('' and 'Hiren')  # here first string is empty
+
+'''
+x or y
+if x is True then result is x
+if x is False then result is y
+'''
+print(10 or 20)
+print(0 or 20)
+print([] or 'Shiva')
+print('Hiren' or 'Renuka')
+
+#not for non-boolean type the result is in boolean
+print(not 'durga')
+print(not '')
+print(not 0)
+print(not 10)
+
+#bitwise operators: only for int and boolean data type
+'''
+& --> bitwise and(if both bits are '1' then result is 1 otherwise '0')
+| --> bitwise or(if atleast one bit is '1' then result is 1 otherwise '0')
+^ --> bitwise x-or(if both bits are different then result is 1 otherwise '0')
+~ --> bitwise complement operator
+<< --> bitwise left-shift operator
+>> --> bitwise right-shift operator
+'''
+#print(10.20 & 20.30) we will get type error
+#print('durga & 'durga')
+
+print(10 & 20)
+print(4&5)
+print(4|5)
+print(4^5)
+
+#bitwise complement operator:
+print(~4)
+'''
+The most significant bits act as sign bit
+0--> +ve number
+1--> -ve number
++ve number will be directly represented directly in the memory
+-ve number will be represented in 2's complement form
+1st complement => 0-->1
+               => 1-->0
+2nd complement 1's complement + 1
+'''
+print(~5)
+print(~-4)
+
+#shift operator: <<, >>
+print(10<<2) #this is left shift operator
+print(10>>2) #this is right shift operator
+
+print(True & False)
+print(True & True)
+print(True| False)
+print(True | True)
+print(True^False)
+print(True^True)
+print(~True)
+print(~False)
+print(~1)
+print(True<<2)
+print(False<<2)
+print(True>>2)
+print(False>>2)
 
 
 
