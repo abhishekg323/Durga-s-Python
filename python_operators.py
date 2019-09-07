@@ -298,4 +298,88 @@ print('here is result of:', result)
 
 
 #special operators:
-#
+#Identify Operators:
+#is and is not
+a=10
+b=10
+print(a is b)
+print(a is not b)
+
+l1 = [10,20,30,40]
+l2=[10,20,30,40]
+print(id(l1))
+print(id(l2))
+print(l1 is l2)
+print(l1==l2)
+
+#membership operator:
+s = 'Hello learning python is very easy'
+print('e' in s)
+print('Hello' in s)
+print('h' in s)
+print('d' in s)
+print('h' not in s)
+
+l=['hiren','shiva','renuka','shiva']
+print('hiren' in l)
+print('nena' not in l)
+print('shiva' not in l)
+
+#operator precedence:
+print(2+10*3)
+
+#python operator precedence:
+# () --> parenthesis
+# ** --> exponetial
+# ~,- --> bitwise compement operator and unary minus operator
+# *,/,%,// --> multiplication,division,modulo,floor division
+# +,- --> plus and substraction
+# <<,>> --> left shift and right shift
+# &--> bitwise and
+# ^ --> bitwise x-or
+# | --> bitwise OR
+# >,>=,<,<=,==,!= --> relational or comparision operators
+# =,+=,-=,*= --> asigment operators
+# is,is not --> Identity operator
+# in, not in --> membership operator
+# not --> logical not
+# and --> logical and
+# or --> logical or
+
+
+a=30
+b=20
+c=10
+d=5
+print((a+b)*c/d)
+print((a+b)*(c/d))
+print(a+(b*c)/d)
+
+
+#mathematical functions from math module:
+#code reusability
+'''math,random,time,threading all are inbuilt module in python'''
+
+x=888
+y=999
+def add(x,y):
+    print('performing add operation:')
+    print(x+y)
+def product(x,y):
+    print('performing multiplication operation')
+    print(x*y)
+
+#find
+from math import *
+r = int(input('please enter radiou of are:  '))
+print('area of radius:', pi*r**2)
+
+import math
+print(dir(math))
+
+import math
+print(math.sqrt(4))
+
+import math
+print(math.pi())
+

@@ -752,7 +752,8 @@ print('This shiva\'s House') #back slash
 #constants in python:
 '''constant is not applicable in python like in java there is final keyword to used for constant'''
 
-#
+#backend,
+# data analysis--> hadoop,spark,mapreduce,hive,no sql,sql,python,pandas, data frame
 # 4month
 # medium python
 # medium java
@@ -762,4 +763,7 @@ print('This shiva\'s House') #back slash
 # FIrst Frontend (HTML, CSS , JS(Dynamic [Ajax]))
 # BAckend (.net [CSHarp], django/flask [Python], Node.js [Javascript] )
 # SQL ()
+
+def num():
+    return
 
