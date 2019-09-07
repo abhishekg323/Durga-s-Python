@@ -752,3 +752,14 @@ print('This shiva\'s House') #back slash
 #constants in python:
 '''constant is not applicable in python like in java there is final keyword to used for constant'''
 
+#
+# 4month
+# medium python
+# medium java
+# sql 70
+# html css
+#
+# FIrst Frontend (HTML, CSS , JS(Dynamic [Ajax]))
+# BAckend (.net [CSHarp], django/flask [Python], Node.js [Javascript] )
+# SQL ()
+
