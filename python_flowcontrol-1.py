@@ -117,3 +117,132 @@ else:
     print('congratualtions your all item succeessfully process')
 
 #pass statement:
+def f1():
+    pass
+
+#if we do not do pass here then we will get error
+
+class A:
+    pass
+class B:
+    pass
+class C:
+    pass
+
+#if  we do not do pass here then we will get error here
+x=10
+if x<100:
+    print('success')
+else:
+    pass
+
+#if you do not want to implement now else then you can say pass
+#if you do not do implement and do not write pass then we will get error
+from abc import *
+class Loan(ABC):
+    def getInterestRate(self):
+        pass
+
+class Home(Loan):
+    def getInterestRate(self):
+        return 8
+class Vehicle(Loan):
+    def getInterestRate(self):
+        return 10
+
+h=Home()
+print(h.getInterestRate())
+
+v=Vehicle()
+print(v.getInterestRate())
+
+#del statement:
+x = 10
+print(x)
+del x
+print(x)
+
+s1='Shiva'
+s2=s1
+s3=s1
+del s1
+print(s2)
+print(s3)
+del s2
+del s3
+
+#del vs immutable object
+s = 'Shiva'
+del s
+
+s='Renuka'
+del s[0] #we will get error becaaseu del is used for delet object or reference but not for element
+
+#list
+l =[10,20,30,40]
+print(l)
+del l
+print(l)
+
+t =(10,30,40)
+print(t)
+del t
+
+#del vs None
+x=10
+del x
+print(x) #here we will get error
+
+x=10
+x=None
+print(x)
+
+#prime number introduction
+#given number is prime or not?
+
+n= int(input('enter here any number'))
+if n<=1:
+    print('It is not Prime Number')
+else:
+    is_prime=Trueg
+    for i in range(2,n):
+        if n%i==0:
+            is_prime =False
+            break
+    if is_prime==True:
+        print('It is prime number')
+    else:
+        print('It is not prime number')
+
+#generate prime number which are less than or equal to given number:
+n= int(input('enter here any number'))
+n1=2
+while n1<=n:
+    #this code is to check whether n1 is prime or not
+    is_prime=True
+    for i in range(2,n1//2+1):
+        if n1%i==0:
+            is_prime=False
+            break
+    if is_prime==True:
+        print(n1)
+    n1=n1+1
+
+#generate first prime number here:
+n= int(input('enter here any no:'))
+count=0
+n1=2
+while True:
+    is_prime=True
+    for i in range(2,n1//2+1):
+        if n1%i==0:
+            is_prime=False
+            break
+    if is_prime==True:
+        print(n1)
+        count=count+1
+    if count==n:
+        break
+
+
+
