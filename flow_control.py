@@ -227,3 +227,38 @@ for i in range(3): #i=0,1,2
 for i in range(3):
     for j in range(2):
         print('i={},j={}'.format(i,j))
+
+if True:
+    print('hello my name is renuka')
+if 2>1:
+    print('2 is bigger than 1 and it is True:')
+
+#The “else” statement will be executed if the “if” expression is false.
+if 1>2:
+    print('this is false')
+else:
+    print('this is not true:')
+
+if 1 > 2:
+ print("1 is greater than 2")
+elif 2 > 1:
+ print("1 is not greater than 2")
+else:
+ print("1 is equal to 2")
+
+ num=1
+ while num<=10:
+     print(num)
+     num +=1
+
+loop_condition = True
+while loop_condition:
+    print("Loop Condition keeps: %s" %(loop_condition))
+    loop_condition = False
+
+Renuka=True
+while Renuka:
+    print('this is True and it will printing:')
+    Renuka=False
+
+#list is collection
