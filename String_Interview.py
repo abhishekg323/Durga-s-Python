@@ -206,4 +206,81 @@ s='AABBCCDD'
 for ch in (s):
     print('{} occures {}'.format(ch,s.count(ch)))
 
+#dictionary conclusion
+d={'A':100,'B':200,'Z':300,'C':500}
+for k,v in sorted(d.items()):
+    print(k,v)
 
+#count no of chr in string by using dict method:
+s='AABBBDEHSADDD'
+d={}
+for ch in s:
+    d[ch]=d.get(ch,0)+1
+print(d)
+for k,v in sorted(d.items()):
+    print('{} occures {} many itmes:'.format(k,v))
+
+#convert AAABDGGGGEDD to 3A3D4G1E using dic
+s='AAABBBBCCCCDDDD'
+d={}
+output=''
+for ch in s:
+    d[ch]=d.get(ch,0)+1
+for k,v in sorted(d.items()):
+    output=output+str(v)+k
+print(output)
+
+#convert AABBCCDD in form of A2B2C2D2
+s='AABBCCDD'
+d={}
+for ch in s:
+    d[ch]=d.get(ch,0)+1
+for k,v in d.items():
+    output = ''
+    output=output+k+str(v)
+print(output)
+
+#find ovel from given string
+s='SHIVAHIRENUKAPATOLIYA'
+v={'a','e','i','o','u','A','E','I','O','U'}
+d={}
+for ch in s:
+    if ch in v:
+        d[ch]=d.get(ch,0)+1
+print(d)
+for k,v in d.items():
+    print('{} occures {} times'.format(k,v))
+
+#two string anagram or not?
+s1='lazy'
+s2='zaly'
+if sorted(s1)==sorted(s2):
+    print('both are anagram')
+else:
+    print('both are not anagram')
+
+#given string is palidrome or not?
+s='EYE'
+if s==s[::-1]:
+    print('both strings are palidrome')
+else:
+    print('both string are not palidrome')
+
+#join three string by one by one character
+s1='ABCDE'
+s2='abcde'
+s3='123'
+output=''
+i=j=k=0
+while i<len(s1) or j<len(s2) or k<len(s3):
+    if i<len(s1):
+        output=output+s1[i]
+        i=i+1
+    if j<len(s2):
+        output=output+s2[j]
+        j=j+1
+    if k<len(s3):
+        output=output+s3[k]
+        k=k+1
+        #print(output)
+print(output)
