@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a41c9a-17e5-4c84-8507-c6292af17898" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/String_Interview.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/string data type.py" beforeDir="false" afterPath="$PROJECT_DIR$/string data type.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +163,9 @@
       <workItem from="1568106052845" duration="4778000" />
       <workItem from="1568213350309" duration="1421000" />
       <workItem from="1568248250551" duration="633000" />
-      <workItem from="1568299831984" duration="8035000" />
+      <workItem from="1568299831984" duration="8308000" />
+      <workItem from="1568734127439" duration="52000" />
+      <workItem from="1568751789294" duration="2417000" />
     </task>
     <task id="LOCAL-00001" summary="this is new file">
       <created>1567793694386</created>
@@ -298,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568215942968</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="This is all about string">
+      <created>1568312693484</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1568312693484</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,7 +338,8 @@
     <MESSAGE value="this is all flow control with example" />
     <MESSAGE value="this is all about patterns" />
     <MESSAGE value="flow control" />
-    <option name="LAST_COMMIT_MESSAGE" value="flow control" />
+    <MESSAGE value="This is all about string" />
+    <option name="LAST_COMMIT_MESSAGE" value="This is all about string" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Durga_s_Python$flow_control.coverage" NAME="flow_control Coverage Results" MODIFIED="1568130759848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
