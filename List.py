@@ -134,9 +134,23 @@ print(50 not in l1)
 print(70 in l1)
 
 #important methods and functions for list:len(),count() and index()
-l=[10,20,30]
+l=[10,20,30,40,40,50,60,60,60,70,70,8,8,8,20]
 print(len(l))
+print(l.count(50))
+print(l.count(70))
+print(l.count(20))
+print(l.count(60))
+print(l.count(90))
+print(l.index(10))
+print(l.index(50))
 
+l=[1,2,3,4,4,4,5,5,6,6]
+for x in l:
+    print('{} present at {} index'.format(x,l.index(x)))
 
-
-
+l=[1,2,3,4,5,6,6,6,7,7,7,7,8,7,5]
+x=input('please enter here string')
+if x in l:
+    print('{} present at {}'.format(x,l.index(x)))
+else:
+    print(x,'is not available in index')
