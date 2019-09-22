@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="18a41c9a-17e5-4c84-8507-c6292af17898" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/List.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/List.py" beforeDir="false" afterPath="$PROJECT_DIR$/List.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -168,7 +168,8 @@
       <workItem from="1568751789294" duration="2434000" />
       <workItem from="1568772124601" duration="734000" />
       <workItem from="1568810769066" duration="4646000" />
-      <workItem from="1568841173543" duration="4804000" />
+      <workItem from="1568841173543" duration="4820000" />
+      <workItem from="1569167701725" duration="1181000" />
     </task>
     <task id="LOCAL-00001" summary="this is new file">
       <created>1567793694386</created>
@@ -338,7 +339,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568849777093</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="This is all about string">
+      <created>1568984101307</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1568984101307</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

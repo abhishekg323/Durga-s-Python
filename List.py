@@ -84,3 +84,59 @@ l1=[10,20,30,40]
 l2=[20,40,60,80]
 l3=l1+l2
 print(l3)
+# l2=l1+40  we will get erorr
+l4=l1 + [40]
+print(l4)
+# l5=l1 + (10,20,30) we can not concatenate list with tuple
+
+#repetation
+l1=[10,20]
+l2=l1 * 2
+print(l2)
+l2=2*l2
+print(l2)
+
+l1=[10,20]
+l2=[30,40]
+l3=l1+l2
+l4=l3*3
+print(l4)
+
+#equality operator for list
+# == ,!=
+
+l1=['Dog','Rat','Cat']
+l2=['Dog','Rat','Cat']
+l3=['DOG','RAT','CAT']
+l4=['Cat','Rat','Cat']
+print(l1==l2)
+print(l2==l3)
+print(l3==l4)
+print(l1!=l4)
+
+#Relational Operators
+#<,<=,>,>=
+l1=[10,20]
+l2=[50,60,30,40]
+print(l1<l2)
+print(l1<=l2)
+print(l1>l2)
+print(l2>=l2)
+
+l1=['Rabha','Ramya']
+l2=['Rama','Sunnuy']
+print(l1<l2)
+
+#membership operator
+l1=[10,20,30,40,50]
+print(10 in l1)
+print(50 not in l1)
+print(70 in l1)
+
+#important methods and functions for list:len(),count() and index()
+l=[10,20,30]
+print(len(l))
+
+
+
+
