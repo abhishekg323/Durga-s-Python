@@ -154,3 +154,259 @@ if x in l:
     print('{} present at {}'.format(x,l.index(x)))
 else:
     print(x,'is not available in index')
+
+#manipulating element of list:
+l=[]
+l.append(10)
+l.append(20)
+l.append(30)
+l.append(40)
+print(l)
+
+l=[]
+for x in range(1,101):
+    if x%10==0:
+        l.append(x)
+print(l)
+
+#insert
+#l.insert(index,element)
+l=[10,20,30,40]
+l.insert(1,7777)
+print(l)
+l.insert(20,8888)
+print(l)
+l.insert(-30,999)
+print(l)
+
+#extend
+order1=['chicken','mitton','fish']
+order2=['KF','KO','RC']
+order1.extend(order2)
+print(order1)
+
+l1=[10,20,30]
+l2=[30,40]
+l1.append(l2)
+print(l1)
+print(len(l1))
+
+l1=[10,20,30]
+l2=[40,50]
+l1.extend(l2)
+print(l1)
+print(len(l1))
+
+l1=[10,20,30]
+l2=['ABC']
+l1.append(l2)
+print(l1)
+print(len(l1))
+
+l1=[10,20,30]
+l2=['ABC']
+l1.extend(l2)
+print(l1)
+print(len(l1))
+
+l1=[10,20,30]
+l1.extend('ABC')
+print(l1)
+print(len(l1))
+
+#remove
+l=[10,20,30,40,40,30]
+l.remove(20)
+print(l)
+l.remove(40)
+print(l)
+# l.remove(50) here we will get value error
+
+l=[1,2,3,4,5,6]
+x=int(input('please enter here any no'))
+print('before removal:',l)
+if x in l:
+    l.remove(x)
+    print('after removal:',l)
+else:
+    print('this elements are not available in list')
+
+#how to remove all occurences
+l=[1,1,1,1,1,3,3,3,3,4,4,4,2,2,]
+x=int(input('enter elements to removal:'))
+print('before removal',l)
+while True:
+    if x in l:
+        l.remove(x)
+    else:
+        break
+print('after removal',l)
+
+#pop() and clear()
+l=[10,20,30]
+print(l.pop())
+print(l)
+l.pop()
+print(l)
+l.pop()
+print(l)
+#l.pop() we will get index error
+#l.pop(index)
+l=[10,20,30,40]
+print(l.pop(1))
+print(l)
+
+#clear()
+l=[10,20,30,40]
+print(l)
+l.clear()
+print(l)
+
+#in list we can increase the size of list by using append, extend and insert methoda
+#also decrease the size of list by using pop,remove and clear methods
+
+#ordering elements of list:
+l=[10,20,30,40,50]
+print('before reversal',l)
+l.reverse()
+print('after reversal',l)
+
+l=[10,20,30,40,50,60]
+r=reversed(l)
+print(r)
+l1=list(r)
+print(l)
+print(l1)
+
+s='Shiva'
+# s.reverse we can not apply here
+r=reversed(s)
+for x in r:
+    print(x)
+l=list(r)
+print(l)
+
+#sort() and sorted()
+l=[0,5,4,3,5,67,89,20]
+print('before sorting',l)
+l.sort()
+print('after sorted',l)
+
+l=['banana','cat','apple']
+print('before sorting',l)
+l.sort()
+print('after sorting',l)
+
+l=[1,0,80,60,4,5,6,70]
+print('before reveese sorting',l)
+l.sort(reverse=True)
+print('After reverse sorting',l)
+
+# in short() all elements should be heterogenous
+#sorted is in build python function and can apply anywhere else
+#but sort() is not in built funcition and its applicable only for list
+l1=[10,20,30,40]
+print(l1)
+l2=sorted(l1)
+print(l2)
+
+#aliasing and cloning of list object:
+l1=[10,20,30,40]
+l2=l1
+l[1]=777
+print(l1)
+print(l2)
+print(id(l1))
+print(id(l2))
+
+#cloning
+l1=[10,20,30,40]
+l2=l1[::]   # or l2=l1.copy()
+print(l1)
+print(l2)
+print(id(l1))
+print(id(l2))
+
+l1[1]=777
+print('l1:',l1)
+print('l2:',l2)
+
+#nested lists:
+l=[10,20,30,[40,50]]
+print(l[0])
+print(l[1])
+print(l[2])
+print(l[3][0])
+print(l[3][1])
+
+l=[[10,20,30],[40,50,60],[70,80,90]]
+print(l)
+print('print element in row type')
+for x in l:
+    print(x)
+print('print element in matrix type')
+for x in l:
+    for y in x:
+        print(y)   # print(y,end=' ')
+
+
+#list comprehnsion:
+l=[]
+for i in range(1,11):
+    l.append(i)
+print(l)
+
+l=[x for x in range(1,11)]
+print(l)
+
+l=[x*x for x in range(1,101)]
+print(x)
+
+l=[2**x for x in range(1,6)]
+print(l)
+
+l=[x for x in range(1,101) if x%10==0]
+print(l)
+
+l1=[10,20,30,40]
+l2=[30,40,50,60]
+l=[x for x in l1 if x not in l2]
+print(l)
+
+l4=[x for x in l1 if x in l2]
+print(l4)
+
+l=['Shiva','Hiren','Renuka']
+l1=[word[0] for word in l]
+print(l1)
+l2=[word[1] for word in l]
+print(l2)
+
+s='the quick brown fox jump over the lazy dog'
+words=s.split()
+print(words)
+
+l=[[word.upper(),len(word)] for word in words]
+print(l)
+
+vowels=['a','e','i','o','u']
+word=input('please enter here any string')
+result=[]
+for ch in word:
+    if ch in vowels:
+        if ch not in result:
+            result.append(ch)
+print(result)
+print('no of unique vowels',len(result))
+
+vowels=['a','e','i','o','u']
+word=input('please enter here any string')
+result=[]
+for ch in vowels:
+    if ch in word:
+        result.append(ch)
+print(result)
+print('no of unique vowels',len(result))
+
+l=[ch for ch in vowels if ch in word]
+print(l)
